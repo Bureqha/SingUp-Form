@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup.css">
+  <title>Signup Form</title>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("13.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      
+      .container {
+        background-color:transparent ;
+        backdrop-filter: blur(20px);
+        padding: 70px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h2 {
+        text-align: center;
+        color: #ffffff;
+      }
+      
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      input {
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 17px;
+        background-color:transparent ;
+        color:#fff;
+      }
+      
+      button {
+        background-color: #011816;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 17px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #053041;
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="signupForm">
+      <h2>Sign Up</h2>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder= "Enter your username" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder= "Enter your email" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"  placeholder= "Enter your password"  required>
+      <br>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
